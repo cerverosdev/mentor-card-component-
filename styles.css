@@ -1,0 +1,89 @@
+:root{
+    --dark-cyan:hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --monserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5rem;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--Cream);
+    font-size: 1.4rem;
+}
+.product-container{
+    width: 375px;
+    background-color: var(--White);
+    border-radius: 16px;  
+    margin:24px auto;  
+    padding-bottom: 24px;
+}
+.product-container img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.product-info{
+    padding: 0 16px 0 16px;
+}
+.product-item{
+    color: var(--Dark-grayish-blue);
+    font-family: var(--monserrat);
+    text-transform:uppercase;
+    letter-spacing: 4.5px;
+    font-size: 1rem;
+}
+.product-name{
+    font-family: var(--fraunces);
+    color: var(--Very-dark-blue);
+    font-size: 2.0rem;
+    margin-top: 10px;
+}
+.product-description{
+    font-family: var(--monserrat);
+    color: var(--Dark-grayish-blue);
+    font-size: 1.03rem;
+}
+.product-price__container{
+    display: flex;
+    align-items: center;
+}
+.product-price__curr{
+    color: var(--dark-cyan);
+    font-family: var(--fraunces);
+    font-size: 2.3rem;
+    margin:14px 12px 10px;
+}
+.product-price__discount{
+    color: var(--Dark-grayish-blue);
+    font-size: 1rem;
+    margin-left: 16px;
+    text-decoration:line-through;
+}
+.product-cart{
+    margin-left:50%;
+    transform: translateX(-50%);
+    background: var(--dark-cyan);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: var(--monserrat);
+    height: 47px;
+    width: 80%;
+    color: var(--White);    
+}
+.product-cart img{
+    width: 1rem;
+    margin-right: 4px;
+}
