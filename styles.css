@@ -21,14 +21,19 @@ body{
     background: var(--Cream);
     font-size: 1.4rem;
 }
+main{
+    
+    width: 100%;
+    
+}
 .product-container{
-    width: 375px;
+    max-width: 375px;
     background-color: var(--White);
     border-radius: 16px;  
     margin:24px auto;  
     padding-bottom: 24px;
 }
-.product-container img{
+.product-image  {
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -62,16 +67,17 @@ body{
     color: var(--dark-cyan);
     font-family: var(--fraunces);
     font-size: 2.3rem;
-    margin:14px 12px 10px;
+    margin:14px 0 12px 0px;
 }
 .product-price__discount{
     color: var(--Dark-grayish-blue);
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-left: 16px;
     text-decoration:line-through;
 }
 .product-cart{
     margin-left:50%;
+    margin-bottom: 10px;
     transform: translateX(-50%);
     background: var(--dark-cyan);
     border: none;
@@ -86,4 +92,24 @@ body{
 .product-cart img{
     width: 1rem;
     margin-right: 4px;
+}
+@media (min-width: 550px){
+    .product-container{
+        max-width: 560px;
+        display: flex;
+        padding: 0;
+    }
+    .product-image{
+        content: url(/images/image-product-desktop.jpg);
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 0;
+        width: 285px;
+        object-fit: cover;
+    }
+    .product-info{
+        padding: 24px;
+    }
+    .product-cart{
+        width: 100%;
+    }
 }
